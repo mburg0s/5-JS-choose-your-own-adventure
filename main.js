@@ -1,4 +1,7 @@
-// Household chores games     
+// Household chores games.
+// if the score 15 then can watch tv
+// if the score is < 15 will ask to do another chores
+// if more than 15 deserves to have an ice cream!
 var vChores = null
 var vScore=0
  var vPlay=null
