@@ -4,7 +4,7 @@ var vScore=0
  var vPlay=null
  var isExtra=null
 alert('Welcome to Household Chore Games! Each chores has corresponding points. You have to score 15 points to be able to watch TV' );
-var conPlay=confirm('Do you want to play now?')
+var conPlay=confirm('Do you want to do Chores now?')
 if (conPlay===true){
     vChores= prompt('Each chores have corresponding points. Type the LETTERS of your choices. A. Help make dinner - 5 pts B. Vaccum living room- 10 pts. C. Laundry - 15 pts. D. Load dishwasher - 10pts')
     if (vChores=='A' || vChores== 'a'){
@@ -30,7 +30,7 @@ if (conPlay===true){
 
 
 if ((vScore<15) && (vScore>0)){
-    vPlay=confirm('You needed more points to watch tv. Do you want to play again?')
+    vPlay=confirm('You needed more points to watch tv. Do yo want to add chores?')
     if(vPlay===true){
         vChores= prompt('Each chores have corresponding points. Type the LETTERS of your choices. A. Help make dinner - 5 pts B. Vaccum living room- 10 pts. C. Laundry - 15 pts. D. Load dishwasher - 10pts')
         if (vChores=='A' || vChores=='a'){
@@ -74,6 +74,6 @@ if (isExtra) {
     alert('You Rock! You Deserve an ice cream while watching tv!')
 } else if ((!isExtra) && (isExtra!=null)){
     alert('You deserve to watch tv!')
-}else if ((vScore<15) && (vscore==null)){
+}else if ((vScore<15) && (vScore==null)){
     alert('No TV for you!')
 }
