@@ -9,7 +9,6 @@ if (conPlay===true){
     vChores= prompt('Each chores have corresponding points. Type the LETTERS of your choices. A. Help make dinner - 5 pts B. Vaccum living room- 10 pts. C. Laundry - 15 pts. D. Load dishwasher - 10pts')
     if (vChores=='A' || vChores== 'a'){
         vScore=5
-        // alert('you can relax and watch TV!')      
     }
     else if (vChores=='B' || vChores=='b')  {
             vScore=10 
@@ -24,7 +23,7 @@ if (conPlay===true){
     vScore=null
     alert('Goodbye')
     
-}// 
+}
 
 
 
@@ -50,7 +49,6 @@ if ((vScore<15) && (vScore>0)){
 
 
 
-    // else (vScore>=15){
 }else if (vScore>0){   
   var Again=confirm('You can enjoy watching TV. Do you want ice cream?')
   if (Again===true){  
@@ -59,12 +57,11 @@ if ((vScore<15) && (vScore>0)){
         isExtra=true
       }
     else{
+        vScore=null
         alert('You can watch but no ice cream')
+        
     }
     }
-//   else {
-//       isExtra=false
-//   }
 }
 
 if (vScore>15){
@@ -77,6 +74,6 @@ if (isExtra) {
     alert('You Rock! You Deserve an ice cream while watching tv!')
 } else if ((!isExtra) && (isExtra!=null)){
     alert('You deserve to watch tv!')
-}else if (vScore<15){
+}else if ((vScore<15) && (vscore==null)){
     alert('No TV for you!')
 }
